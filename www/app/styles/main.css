@@ -1,0 +1,23 @@
+.header-bar {
+  background-color: #333;
+  color: #ddd;
+  height: 5rem;
+  padding-top: 1rem;
+}
+
+.card-list {
+  width: 30rem;
+  position: relative;
+  perspective: 2000px;
+}
+
+.custom-card {
+  cursor: pointer;
+  font-size: 3rem;
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+  width: 50rem;
+  height: 11rem;
+  background-color: #66c;
+  color: #ddd;
+}

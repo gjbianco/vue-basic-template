@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Basic Template</title>
+
+  <link rel="stylesheet" href="/dist/main.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="header-bar">
+      <h1>Vue.js Basic Template</h1>
+    </div>
+
+    <div class="container">
+
+      <!-- TODO make into separate component -->
+      <div class="row my-3" v-for="objective in objectives" v-if="objectives">
+        <div class="col-sm-6">
+          <!-- TODO move into card component -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ objective.name }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 v-else="">No objecives found!</h1>
+
+    </div>
+
+  </div>
+  <script src="/dist/main.js"></script>
+</body>
+
+</html>
